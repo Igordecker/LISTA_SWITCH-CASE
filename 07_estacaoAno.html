@@ -1,0 +1,74 @@
+<meta charset="UTF-8">
+<script>
+    /*
+    PROBLEMA: ESTAÇÃO DO ANO
+    Faça um script que pergunte para a pessoa em qual hemisfério ela está e qual o mês atual.
+    De acordo com as respostas, informe qual a estação do ano correspondente.
+    */
+
+    //ENTRADA
+const mes = Number(prompt(`Informe o mês atual em número exemplo janeiro = 1`));
+const hemisferio = prompt(`Informe o hemisterio em você neste momento`).toUpperCase();
+    //PROCESSAMENTO
+switch (hemisferio) {
+    case "NORTE":
+        switch (mes) {
+            case 1:
+            case 2: 
+            case 12: 
+            alert(`Sua estação atual do ano é inverno`)    
+                break;
+            case 3:
+            case 4: 
+            case 5: 
+            alert(`Sua estação atual do ano é a primavera`)
+            break;
+            case 6:
+            case 7: 
+            case 8: 
+            alert(`Sua estação atual do ano é o verão`)
+            break;
+            case 9:
+            case 10: 
+            case 11:  
+            alert(`Sua estação atual do ano é o outono`)
+            break;
+            default:
+            alert(`Seu mes é inválido`)
+                break;
+        }
+        break;
+    case "SUL" :
+switch (mes) {
+            case 1:
+            case 2: 
+            case 12: 
+            alert(`Sua estação atual do ano verão`)    
+                break;
+            case 3:
+            case 4: 
+            case 5: 
+            alert(`Sua estação atual do ano é o outono`)
+            break;
+            case 6:
+            case 7: 
+            case 8: 
+            alert(`Sua estação atual do ano é o inverno`)
+            break;
+            case 9:
+            case 10: 
+            case 11:  
+            alert(`Sua estação atual do ano é a primavera`)
+            break;
+            default:
+            alert(`Seu mes é inválido`)
+                break;
+}   break
+    default:
+      alert(`Hemisfério inválido`);
+    break;
+}
+
+    //SAÍDA
+
+</script>

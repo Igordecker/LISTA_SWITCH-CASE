@@ -19,8 +19,62 @@ const dever = prompt(`Informe se você devia para a vitíma S para sim e N para 
 const trabalhou = prompt(`Informe se você já trabalhou com a vitíma S para sim e N para não`).toUpperCase();
 
     //PROCESSAMENTO
+let suspeito = 0
 
-
+switch (telefone) {
+    case "S":
+        suspeito = suspeito + 1
+        break;
+    default:
+        suspeito = suspeito
+        break;
+}
+switch (local) {
+    case "S":
+        suspeito = suspeito + 1
+        break;
+    default:
+        suspeito =suspeito
+        break;
+}
+switch (morar) {
+    case "S":
+        suspeito = suspeito + 1
+        break;
+    default:
+        suspeito = suspeito
+        break;
+}
+switch (dever) {
+    case "S":
+        suspeito = suspeito + 1
+        break;
+    default:
+        suspeito =suspeito
+        break;
+}
+switch (trabalhou) {
+    case "S":
+        suspeito = suspeito + 1
+        break;
+    default:
+        suspeito =suspeito
+        break;
+}
     //SAÍDA
-
+switch (suspeito) {
+    case 2:
+alert(`Você foi classificado como suspeita`)
+        break;
+    case 3:
+    case 4:
+ alert(`Você foi classificado como cumplice`)
+        break;
+   case 5: 
+   alert(`Você foi classificado como culpado`)
+   break;
+   default: 
+   alert(`Você fui classificado como inocente`)
+   break;
+}
 </script>
